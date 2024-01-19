@@ -1,0 +1,83 @@
+/* Start Variables */
+:root {
+    --main-color: #0eaaa6;
+    --secondary-color: #000;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+}
+.container {
+    margin-top: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* End Global Rules */
+/* Start Components */
+.container {
+    width: 950px;
+    height: 300px;
+}
+form {
+    background-color: var(--secondary-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+input[type="text"] {
+    width: 160px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+input[type="number"] {
+    width: 130px;
+    padding: 5px;
+    padding-left: 10px;
+    border-radius: 6px;
+}
+input[type="submit"] {
+    margin-left: 15px;
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+input[placeholder="Min Price"]::before {
+    content: "$";
+    position: absolute;
+    
+} 
+.boxx {
+    background-color: var(--main-color);
+    margin-top: -25px;
+    padding-bottom: 20px;
+    border-radius: 0 0 6px 6px;
+}
+h2 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 25px;
+}
+p {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+/* End Components */
